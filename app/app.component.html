@@ -1,55 +1,46 @@
-<header class="navbar navbar-dark bg-inverse navbar-fixed-top">
+<header class="navbar navbar-fixed-top navbar-dark bg-inverse">
     <div class="container">
-
-
         <nav>
             <div class="clearfix">
                 <a class="navbar-brand" href="javascript:void(0)">
-                    <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="favicon angular"> {{ title }}
+                    <img src="/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="favicon angular"> {{ title }}
                 </a>
-            </div>
-            <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-                <!--<ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/"></a>
-          </li>
-        </ul>-->
             </div>
         </nav>
     </div>
 </header>
+
 <div class="spacer100"></div>
+
 <div class="container">
 
     <div class="form-group">
         <label for="numberFibonacci">Fibonacci diget number</label>
-        <input type="number" [(ngModel)]="fnumber" (change)="fnumber < 1001 ? calculate(): true" class="form-control" id="numberFibonacci" min="0">
+        <input type="number" [(ngModel)]="num" (change)="num < 500 ? calculate(): true" class="form-control" id="numberFibonacci" min="0">
         <small id="numberFibonacciHelp"></small>
     </div>
+
     <div class="form-group">
-        <button class="btn btn-default" (click)="calculate()">Calculate {{fnumber > 1000 ? '(Use button)' : ''}}</button>
+        <button class="btn btn-default" (click)="calculate()"> Calculate {{num > 500 ? '(Use button)' : ''}}</button>
     </div>
 
     <div class="form-group">
         <label for="Fresult">Fibonacci result</label>
-        <textarea class="form-control" id="Fresult" rows="10" [(ngModel)]="fresult"></textarea>
+        <textarea class="form-control" id="Fresult" rows="10" [(ngModel)]="result"></textarea>
     </div>
 
-    
+    <div class="alert alert-info alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Long summation javascript function</strong>
+    </div>
 
-
-<div class="alert alert-info alert-dismissible fade in" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <strong>Long summation javascript function</strong>
-</div>
-
-<div class="alert alert-info alert-dismissible fade in" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <strong>Counting the number of Fibonacci</strong>
-</div>
+    <div class="alert alert-info alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Counting the number of Fibonacci</strong>
+    </div>
 
 </div>
