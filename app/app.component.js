@@ -13,7 +13,9 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Angular2 Fibonacci';
         this.num = 10;
-        this.result = this.Fibonacci(this.num);
+        this.result = 55;
+        this.resultLength = 2;
+        this.Calculate();
     }
     AppComponent.prototype.Sum = function (firstParam, lastParam) {
         var first = firstParam.toString();
@@ -63,8 +65,12 @@ var AppComponent = (function () {
         }
         return str;
     };
-    AppComponent.prototype.calculate = function () {
+    AppComponent.prototype.ResultLength = function () {
+        this.resultLength = this.result.toString().length;
+    };
+    AppComponent.prototype.Calculate = function () {
         this.result = this.Fibonacci(this.num);
+        this.ResultLength();
     };
     AppComponent.prototype.Fibonacci = function (num) {
         var array = ['0', '1', '1'];

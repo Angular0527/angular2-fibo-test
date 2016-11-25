@@ -17,18 +17,18 @@
     <p><strong>This app is the implementation of calculating the Fibonacci numbers. And also contains the implementation of long sum.</strong></p>
 
     <div class="form-group">
-        <label for="numberFibonacci">Fibonacci digit number</label>
-        <input type="number" [(ngModel)]="num" (change)="num <= 500 ? calculate(): true" class="form-control" id="numberFibonacci"
+        <label for="numberFibonacci">Fibonacci digit number:</label>
+        <input type="number" [(ngModel)]="num" (change)="num <= 500 ? Calculate(): true" class="form-control" id="numberFibonacci"
             min="0">
         <small id="numberFibonacciHelp"></small>
     </div>
 
     <div class="form-group">
-        <button class="btn btn-default" (click)="calculate()"> Calculate {{num > 500 ? '(Use button)' : ''}}</button>
+        <button class="btn btn-default" (click)="Calculate()"> Calculate {{num > 500 ? '(Use Button)' : ''}}</button>
     </div>
 
     <div class="form-group">
-        <label for="Fresult">Fibonacci result digit</label>
+        <label for="Fresult">Fibonacci result digit(len: {{resultLength}}):</label>
         <textarea class="form-control" id="Fresult" rows="10" [(ngModel)]="result"></textarea>
     </div>
 

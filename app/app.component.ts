@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string;
   num: number;
+  resultLength: number;
   result: string | number;
 
   constructor() {
     this.title = 'Angular2 Fibonacci';
     this.num = 10;
-    this.result = this.Fibonacci(this.num);
+    this.result = 55;
+    this.resultLength = 2;
+    this.Calculate();  
   }
 
   private Sum(firstParam: string | number, lastParam: string | number) {
@@ -70,8 +73,13 @@ export class AppComponent {
     return str;
   }
 
-  public calculate() {
+public ResultLength(){
+  this.resultLength = this.result.toString().length
+}
+
+  public Calculate() {
     this.result = this.Fibonacci(this.num);
+    this.ResultLength();
   }
 
   private Fibonacci(num: number | string) {
@@ -93,5 +101,4 @@ export class AppComponent {
 
     return sum;
   }
-
 }
