@@ -1,6 +1,6 @@
 {
   "name": "angular2-fibonacci",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Angular2 Fibonacci",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
