@@ -18,7 +18,7 @@
 
     <div class="form-group">
         <label for="numberFibonacci">Fibonacci digit number</label>
-        <input type="number" [(ngModel)]="num" (change)="num < 500 ? calculate(): true" class="form-control" id="numberFibonacci"
+        <input type="number" [(ngModel)]="num" (change)="num <= 500 ? calculate(): true" class="form-control" id="numberFibonacci"
             min="0">
         <small id="numberFibonacciHelp"></small>
     </div>
