@@ -16,7 +16,7 @@ export class AppComponent {
     this.num = 10;
     this.result = 55;
     this.resultLength = 2;
-    this.Calculate();  
+    this.Calculate();
   }
 
   private Sum(firstParam: string | number, lastParam: string | number) {
@@ -73,9 +73,9 @@ export class AppComponent {
     return str;
   }
 
-public ResultLength(){
-  this.resultLength = this.result.toString().length
-}
+  public ResultLength() {
+    this.resultLength = this.result.toString().length
+  }
 
   public Calculate() {
     this.result = this.Fibonacci(this.num);
