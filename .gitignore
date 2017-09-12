@@ -1,20 +1,3 @@
-
-## IDE
-.idea
-.vscode
-
-## DIR DEPENDENCIES
-typings/**
-node_modules
-jspm_packages
-link-checker-results.txt
-**/*npm-debug.log.*
-*.log
-*.log.*
-*.js.map
-_test-output
-_temp
-
-## CONFIG
-!systemjs.config.js
-!typings/typings.d.ts
+node_modules/
+typings/
+**/*.map

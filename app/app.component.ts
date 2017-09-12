@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'fibonacci-number',
@@ -17,6 +17,10 @@ export class AppComponent {
     this.result = 55;
     this.resultLength = 2;
     this.Calculate();
+  }
+
+  public ResultLength() {
+    this.resultLength = this.result.toString().length;
   }
 
   private Sum(firstParam: string | number, lastParam: string | number) {
@@ -41,7 +45,6 @@ export class AppComponent {
     first = tmp;
     first.reverse();
 
-
     last = last.split('');
     tmp = [];
     for (let key in last) {
@@ -56,7 +59,8 @@ export class AppComponent {
       if (append || i <= firstLen) {
         let a = first[i] | 0;
         let b = last[i] | 0;
-        let c = append ? append : 0; c = c ? c : 0;
+        let c = append ? append : 0;
+        c = c ? c : 0;
         let tmp: number = a + b + c;
         let tmp2: string = (tmp % 10).toString();
         str = tmp2 + str;
@@ -71,10 +75,6 @@ export class AppComponent {
     }
 
     return str;
-  }
-
-  public ResultLength() {
-    this.resultLength = this.result.toString().length
   }
 
   public Calculate() {

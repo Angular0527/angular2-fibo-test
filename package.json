@@ -1,43 +1,43 @@
 {
-  "name": "angular2-fibonacci",
-  "version": "1.0.2",
-  "description": "Angular2 Fibonacci",
-  "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
-  },
-  "keywords": [],
-  "author": "Vasilyuk Vasiliy",
-  "license": "ISC",
-  "dependencies": {
-    "@angular/common": "2.0.0-rc.3",
-    "@angular/compiler": "2.0.0-rc.3",
-    "@angular/core": "2.0.0-rc.3",
-    "@angular/forms": "0.1.1",
-    "@angular/http": "2.0.0-rc.3",
-    "@angular/platform-browser": "2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
-    "@angular/router": "3.0.0-alpha.7",
-    "@angular/router-deprecated": "2.0.0-rc.2",
-    "@angular/upgrade": "2.0.0-rc.3",
-    "angular2-in-memory-web-api": "0.0.12",
-    "bootstrap": "^4.0.0-alpha.5",
-    "core-js": "^2.4.0",
-    "jquery": "^3.1.1",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "5.0.0-beta.6",
-    "systemjs": "0.19.27",
-    "tether": "^1.3.7",
-    "zone.js": "^0.6.12"
-  },
-  "devDependencies": {
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^0.8.1"
-  }
+    "name": "angular2-fibonacci",
+    "version": "1.0.2",
+    "description": "Angular2 Fibonacci",
+    "scripts": {
+        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+        "lite": "lite-server",
+        "postinstall": "typings install",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "typings": "typings"
+    },
+    "keywords": [],
+    "author": "Vasilyuk Vasiliy",
+    "license": "ISC",
+    "dependencies": {
+        "@angular/common": "2.0.0-rc.3",
+        "@angular/compiler": "2.0.0-rc.3",
+        "@angular/core": "2.0.0-rc.3",
+        "@angular/forms": "0.1.1",
+        "@angular/http": "2.0.0-rc.3",
+        "@angular/platform-browser": "2.0.0-rc.3",
+        "@angular/platform-browser-dynamic": "2.0.0-rc.3",
+        "@angular/router": "3.0.0-alpha.7",
+        "@angular/router-deprecated": "2.0.0-rc.2",
+        "@angular/upgrade": "2.0.0-rc.3",
+        "angular2-in-memory-web-api": "0.0.12",
+        "bootstrap": "^4.0.0-alpha.5",
+        "core-js": "^2.4.0",
+        "jquery": "^3.1.1",
+        "reflect-metadata": "^0.1.3",
+        "rxjs": "5.0.0-beta.6",
+        "systemjs": "0.19.27",
+        "tether": "^1.3.7",
+        "zone.js": "^0.6.12"
+    },
+    "devDependencies": {
+        "concurrently": "^2.0.0",
+        "lite-server": "^2.2.0",
+        "typescript": "^1.8.10",
+        "typings": "^0.8.1"
+    }
 }

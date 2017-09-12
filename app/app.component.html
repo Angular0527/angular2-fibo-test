@@ -3,7 +3,8 @@
     <nav>
       <div class="clearfix">
         <a class="navbar-brand" href="javascript:void(0)">
-          <img src="/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="favicon angular"> {{title}}
+            <img src="/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="favicon angular">
+            {{title}}
         </a>
       </div>
     </nav>
@@ -14,12 +15,14 @@
 
 <div class="container">
 
-  <p><strong>This app is the implementation of calculating the Fibonacci numbers. And also contains the implementation of long sum.</strong></p>
+    <p><strong>This app is the implementation of calculating the Fibonacci numbers. And also contains the implementation
+        of long sum.</strong></p>
 
   <div class="form-group">
     <label for="numberFibonacci">Fibonacci digit number:</label>
-    <input type="number" [(ngModel)]="num" (change)="num <= 500 ? Calculate(): true" class="form-control" id="numberFibonacci"
-      min="0">
+      <input type="number" [(ngModel)]="num" (change)="num <= 500 ? Calculate(): true" class="form-control"
+             id="numberFibonacci"
+             min="0">
     <small id="numberFibonacciHelp"></small>
   </div>
 
@@ -34,15 +37,15 @@
 
   <div class="alert alert-info alert-dismissible fade in" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <span aria-hidden="true">&times;</span>
+    </button>
     <strong>Long summation javascript function</strong>
   </div>
 
   <div class="alert alert-info alert-dismissible fade in" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <span aria-hidden="true">&times;</span>
+    </button>
     <strong>Counting the number of Fibonacci</strong>
   </div>
 
